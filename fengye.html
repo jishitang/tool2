@@ -194,13 +194,13 @@ for(const h of heads){
  let box=h.el.closest('.box-width,.module,.module-main,.layout-box,.box')||h.el.parentElement;
  let items=[];
  for(let i=0;i<4&&box;i++,box=box.parentElement){
-  items=unique([...box.querySelectorAll('a[href*="/detail/"]')].filter(a=>!badHost(a)).map(cardFromA)).filter(isGood).slice(0,24);
+  items=unique([...box.querySelectorAll('a[href*="/chabeihu/"]')].filter(a=>!badHost(a)).map(cardFromA)).filter(isGood).slice(0,24);
   if(items.length>=3)break;
  }
  if(items.length)sections.push({title:h.title,items});
 }
 if(!sections.length){
- let items=unique([...d.querySelectorAll('a[href*="/detail/"]')].filter(a=>!badHost(a)).map(cardFromA)).filter(isGood);
+ let items=unique([...d.querySelectorAll('a[href*="/chabeihu/"]')].filter(a=>!badHost(a)).map(cardFromA)).filter(isGood);
  if(keyword) items=items.filter(x=>x.title.includes(keyword)||x.remark.includes(keyword));
  items=items.slice(0,60);
  sections.push({title:keyword?('搜索：'+keyword):'影片列表',items});
