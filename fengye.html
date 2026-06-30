@@ -57,7 +57,7 @@
 (function(){
 'use strict';
 setTimeout(()=>{try{var el=document.getElementById('status');if(el&&el.textContent==='准备加载…')el.textContent='脚本已启动，正在等待 SDK/加载首页…'}catch(e){}},100);
-const BASE='https://www.ht10010.com';
+const BASE='https://www.tjtcdl.com';
 const CATS = [['首页', '/'],['动作片', '/cupfox-list/6-----------.html'],['喜剧片', '/cupfox-list/7-----------.html'],['恐怖片', '/cupfox-list/8-----------.html'],['科幻片', '/cupfox-list/9-----------.html'],['爱情片', '/cupfox-list/10-----------.html'],['剧情片', '/cupfox-list/11-----------.html'],['战争片', '/cupfox-list/12-----------.html'],['纪录片', '/cupfox-list/20-----------.html'],['国产剧', '/cupfox-list/13-----------.html'],['日韩剧', '/cupfox-list/15-----------.html'],['海外剧', '/cupfox-list/16-----------.html'],['国产动漫', '/cupfox-list/25-----------.html'],['日韩动漫', '/cupfox-list/26-----------.html'],['大陆综艺', '/cupfox-list/21-----------.html'],['日韩综艺', '/cupfox-list/22-----------.html'],['短剧','/cupfox-list/5-----------.html'],['腾讯','/label/qq.html'],['优酷','/label/youku.html'],['B站','/label/bli.html']];
 const UA='Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120 Mobile Safari/537.36';
 let fmReady=false,currentUrl=BASE+'/',lastFocus=null;
